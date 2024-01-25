@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-const TOTAL_TO_GENERATE = 200;
+const TOTAL_TO_GENERATE = 2000;
 const WORKSPACES_DIR = path.join(process.cwd(), "workspaces");
 
 for (let i = 0; i < TOTAL_TO_GENERATE; i++) {
