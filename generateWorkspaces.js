@@ -5,7 +5,7 @@ const TOTAL_TO_GENERATE = 2000;
 const WORKSPACES_DIR = path.join(process.cwd(), "workspaces");
 
 for (let i = 0; i < TOTAL_TO_GENERATE; i++) {
-  const dirname = `_${Date.now()}${Math.floor(Math.random() * 99999)}`;
+  const dirname = `_${Date.now()}${Math.floor(Math.random() * 9999999999)}`;
   const dirPath = path.join(WORKSPACES_DIR, dirname);
   fs.mkdirSync(dirPath);
 
