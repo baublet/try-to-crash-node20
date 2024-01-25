@@ -1,0 +1,13 @@
+{
+  "name": "@test/a",
+  "version": "1.0.0",
+  "license": "MIT",
+  "bin": {
+    "build-app": "build.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "ts-node": "latest",
+    "typescript": "latest"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@baublet/repro-node20-crash",
+  "private": "true",
+  "type": "module",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "generateWorkspaces": "rm -rf workspaces/_* && node generateWorkspaces.js",
+    "tryToCrash": "yarn generateWorkspaces && yarn && yarn turbo run build --concurrency=20"
+  },
+  "devDependencies": {
+    "turbo": "latest"
+  },
+  "workspaces": [
+    "workspaces/*"
+  ]
+}
