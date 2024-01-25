@@ -1,4 +1,4 @@
-name: Create a release candidate branch
+name: Try to fail
 
 on:
   workflow_dispatch:
