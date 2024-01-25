@@ -5,14 +5,12 @@ on:
 
 jobs:
   try-to-fail:
-    strategy:
-      matrix:
-        version: [16, 18, 20]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.version }}
+          node-version: 18
+      - run: nvm install && nvm use && node --version
       - run: yarn
       - run: yarn tryToCrash
